@@ -1,11 +1,11 @@
-import Name from "./components/name";
-import Techs from "./components/techs";
+import Name from "./components/Name";
+import Techstack from "./components/Techstack";
 
 export default function Home(){
   return (
    <>
    <Name/>
-   <Techs/>
+   <Techstack/>
    </>
   )
 }

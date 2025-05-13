@@ -16,7 +16,7 @@ import {
     SiCloudinary,
 } from 'react-icons/si';
 
-export default function Techs() {
+export default function Techstack() {
     const techList = [
         { icon: <SiJavascript className="text-yellow-400" />, name: 'JavaScript' },
         { icon: <SiTypescript className="text-blue-800" />, name: 'TypeScript' },

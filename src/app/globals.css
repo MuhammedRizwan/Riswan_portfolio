@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+:root {
+  --font-underdog: 'Underdog', cursive;
+}
+
+body {
+  font-family: var(--font-underdog);
+}
