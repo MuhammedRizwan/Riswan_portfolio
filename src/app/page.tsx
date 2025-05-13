@@ -1,5 +1,5 @@
-import Name from "./components/Name";
-import Techstack from "./components/Techstack";
+import Name from "./components/name";
+import Techstack from "./components/teckstack";
 
 export default function Home(){
   return (
