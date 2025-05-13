@@ -37,7 +37,7 @@ export default function Techs() {
 
     return (
         <div className="bg-zinc-950 py-10 px-5 text-white">
-            <h2 className="text-center text-3xl font-bold mb-10">Tech Stack</h2>
+            <h2 className="text-center text-3xl font-bold mb-10">I know</h2>
 
             <div className="mx-auto max-w-6xl border border-zinc-700 rounded-xl p-6 bg-zinc-900 shadow-lg transition-transform hover:scale-[1.01]">
                 <div className="flex flex-wrap justify-center gap-8">
