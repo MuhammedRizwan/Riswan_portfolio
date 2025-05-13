@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Underdog } from "next/font/google"; 
+import { Underdog } from "next/font/google";
 import './globals.css';
 
-const underdog = Underdog({  
+const underdog = Underdog({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-underdog",
@@ -11,7 +11,7 @@ const underdog = Underdog({
 export const metadata: Metadata = {
   title: "Muhammed Riswan's Portfolio",
   description: "Portfolio of Muhammed Riswan, a passionate web developer specializing in Next.js, real-time applications, and secure payment systems.",
-  keywords: ["Muhammed Riswan", "portfolio", "web developer", "Next.js", "React", "Tailwind CSS", "Heaven Finder", "NextTick"],
+  keywords: ["Muhammed Riswan", "portfolio", "web developer", "Next.js", "React", "Node Js", "Express Js", "Mongo Db", "Tailwind CSS", "Heaven Finder", "NextTick"],
   openGraph: {
     title: "Muhammed Riswan's Portfolio",
     description: "Explore the projects and skills of Muhammed Riswan, a web developer with expertise in Next.js and real-time applications.",

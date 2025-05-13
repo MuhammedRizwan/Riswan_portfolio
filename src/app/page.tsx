@@ -1,4 +1,3 @@
-
 import Name from "./components/Name";
 import Techstack from "./components/Techstack";
 
