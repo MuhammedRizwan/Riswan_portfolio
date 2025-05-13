@@ -9,13 +9,13 @@ const underdog = Underdog({
 });
 
 export const metadata: Metadata = {
-  title: "Muhammed Riswan's Portfolio",
+  title: "Muhammed Riswan",
   description: "Portfolio of Muhammed Riswan, a passionate web developer specializing in Next.js, real-time applications, and secure payment systems.",
   keywords: ["Muhammed Riswan", "portfolio", "web developer", "Next.js", "React", "Node Js", "Express Js", "Mongo Db", "Tailwind CSS", "Heaven Finder", "NextTick"],
   openGraph: {
     title: "Muhammed Riswan's Portfolio",
     description: "Explore the projects and skills of Muhammed Riswan, a web developer with expertise in Next.js and real-time applications.",
-    url: "https://riswan.site",
+    url: "https://www.riswan.site",
     siteName: "Muhammed Riswan's Portfolio",
     images: [
       {
