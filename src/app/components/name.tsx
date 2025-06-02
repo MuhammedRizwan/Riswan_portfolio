@@ -25,7 +25,7 @@ export default function Name() {
 
     return (
         <div className="bg-zinc-950 h-32 flex items-center justify-center">
-            <h1 className="text-white text-xl md:text-4xl font-underdog font-bold tracking-wide flex space-x-1">
+            <h1 className="text-white text-xl md:text-4xl font-underdog font-bold tracking-wide flex space-x-1 saira_mol">
                 {name.split('').map((char, index) => (
                     <span
                         key={index}

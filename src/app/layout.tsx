@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import { Underdog } from "next/font/google";
+import { Underdog,Saira_Stencil_One } from "next/font/google";
 import './globals.css';
 
 const underdog = Underdog({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-underdog",
+});
+const saira_Stencil_One = Saira_Stencil_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-saira_stencil_One",
 });
 
 export const metadata: Metadata = {
@@ -44,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${underdog.variable} antialiased bg-zinc-950 text-white`}
+        className={`${underdog.variable} ${saira_Stencil_One.variable} antialiased bg-zinc-950 text-white`}
       >
         {children}
       </body>

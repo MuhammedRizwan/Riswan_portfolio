@@ -18,38 +18,41 @@ import {
 
 export default function Techs() {
     const techList = [
-        { icon: <SiJavascript className="text-yellow-400" />, name: 'JavaScript' },
-        { icon: <SiTypescript className="text-blue-800" />, name: 'TypeScript' },
-        { icon: <SiNodedotjs className="text-green-500" />, name: 'Node.js' },
-        { icon: <SiExpress className="text-gray-300" />, name: 'Express.js' },
-        { icon: <SiMongodb className="text-green-600" />, name: 'MongoDB' },
-        { icon: <SiNextdotjs className="text-white" />, name: 'Next.js' },
-        { icon: <SiReact className="text-blue-400" />, name: 'React' },
-        { icon: <SiSocketdotio className="text-white" />, name: 'Socket.io' },
-        { icon: <SiWebrtc className="text-red-500" />, name: 'WebRTC' },
-        { icon: <SiGit className="text-orange-500" />, name: 'Git' },
-        { icon: <SiGithub className="text-gray-300" />, name: 'GitHub' },
-        { icon: <SiCloudinary className="text-blue-700" />, name: 'Cloudinary' },
-        { icon: <SiAmazonec2 className="text-yellow-500" />, name: 'AWS EC2' },
-        { icon: <SiAwsamplify className="text-purple-400" />, name: 'Amplify' },
-        { icon: <SiVercel className="text-white" />, name: 'Vercel' },
+        { icon: <SiJavascript className="text-yellow-400" />, name: 'JavaScript', link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+        { icon: <SiTypescript className="text-blue-800" />, name: 'TypeScript', link: "https://www.typescriptlang.org/" },
+        { icon: <SiNodedotjs className="text-green-500" />, name: 'Node.js', link: "https://nodejs.org/" },
+        { icon: <SiExpress className="text-gray-300" />, name: 'Express.js', link: "https://expressjs.com/" },
+        { icon: <SiMongodb className="text-green-600" />, name: 'MongoDB', link: "https://www.mongodb.com/" },
+        { icon: <SiNextdotjs className="text-white" />, name: 'Next.js', link: "https://nextjs.org/" },
+        { icon: <SiReact className="text-blue-400" />, name: 'React', link: "https://react.dev/" },
+        { icon: <SiSocketdotio className="text-white" />, name: 'Socket.io', link: "https://socket.io/" },
+        { icon: <SiWebrtc className="text-red-500" />, name: 'WebRTC', link: "https://webrtc.org/" },
+        { icon: <SiGit className="text-orange-500" />, name: 'Git', link: "https://git-scm.com/" },
+        { icon: <SiGithub className="text-gray-300" />, name: 'GitHub', link: "https://github.com/" },
+        { icon: <SiCloudinary className="text-blue-700" />, name: 'Cloudinary', link: "https://cloudinary.com/" },
+        { icon: <SiAmazonec2 className="text-yellow-500" />, name: 'AWS EC2', link: "https://aws.amazon.com/ec2/" },
+        { icon: <SiAwsamplify className="text-purple-400" />, name: 'Amplify', link: "https://aws.amazon.com/amplify/" },
+        { icon: <SiVercel className="text-white" />, name: 'Vercel', link: "https://vercel.com/" },
     ];
 
     return (
         <div className="bg-zinc-950 py-10 px-5 text-white">
-            <h2 className="text-center text-lg  md:text-2xl font-bold mb-10">I know</h2>
+            <h2 className="text-center text-lg md:text-2xl font-bold mb-10 saira_mol">I know</h2>
 
             <div className="mx-auto max-w-6xl border border-zinc-700 rounded-xl p-6 bg-zinc-900 shadow-lg transition-transform hover:scale-[1.01]">
-                <div className="flex flex-wrap justify-center gap-8">
+                <div className="flex flex-wrap justify-center gap-6">
                     {techList.map((tech, idx) => (
-                        <div
+                        <a
                             key={idx}
-                            className={`flex flex-col items-center space-y-2 animate-pulse`}
+                            href={tech.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex flex-col items-center space-y-2 animate-pulse cursor-pointer"
                             style={{ animationDelay: `${idx * 200}ms`, animationDuration: '1.2s' }}
                         >
                             <div className="text-xl transition-transform hover:scale-110">{tech.icon}</div>
                             <span className="text-xs">{tech.name}</span>
-                        </div>
+                        </a>
                     ))}
                 </div>
             </div>
