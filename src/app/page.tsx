@@ -1,28 +1,10 @@
 import { Navigation } from "./components/navigation";
 import { HeroSection } from "./components/sections/hero";
-import dynamic from 'next/dynamic';
-import { Suspense } from 'react';
-
-// Lazy load sections below the fold for better initial load performance
-const AboutSection = dynamic(() => import('./components/sections/about').then(mod => ({ default: mod.AboutSection })), {
-  loading: () => <div className="h-screen" />,
-});
-
-const ProjectsSection = dynamic(() => import('./components/sections/projects').then(mod => ({ default: mod.ProjectsSection })), {
-  loading: () => <div className="h-screen" />,
-});
-
-const ExperienceSection = dynamic(() => import('./components/sections/experience').then(mod => ({ default: mod.ExperienceSection })), {
-  loading: () => <div className="h-screen" />,
-});
-
-const EducationSection = dynamic(() => import('./components/sections/education').then(mod => ({ default: mod.EducationSection })), {
-  loading: () => <div className="h-screen" />,
-});
-
-const ContactSection = dynamic(() => import('./components/sections/contact').then(mod => ({ default: mod.ContactSection })), {
-  loading: () => <div className="h-screen" />,
-});
+import { AboutSection } from "./components/sections/about";
+import { ProjectsSection } from "./components/sections/projects";
+import { ExperienceSection } from "./components/sections/experience";
+import { EducationSection } from "./components/sections/education";
+import { ContactSection } from "./components/sections/contact";
 
 export default function Home() {
   return (
@@ -31,13 +13,11 @@ export default function Home() {
       <div id="home">
         <HeroSection />
       </div>
-      <Suspense fallback={<div className="h-screen" />}>
-        <AboutSection />
-        <ProjectsSection />
-        <ExperienceSection />
-        <EducationSection />
-        <ContactSection />
-      </Suspense>
+      <AboutSection />
+      <ProjectsSection />
+      <ExperienceSection />
+      <EducationSection />
+      <ContactSection />
       
       {/* Footer */}
       <footer className="relative py-12 border-t border-white/10 bg-zinc-950">

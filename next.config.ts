@@ -12,12 +12,6 @@ const nextConfig: NextConfig = {
         hostname: 'prod.spline.design',
       },
     ],
-    formats: ['image/avif', 'image/webp'],
-    minimumCacheTTL: 60,
-  },
-  // Performance optimizations
-  experimental: {
-    optimizePackageImports: ['framer-motion', 'lucide-react'],
   },
 };
 
