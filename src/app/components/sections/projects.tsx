@@ -124,7 +124,10 @@ export function ProjectsSection() {
                       src={project.image}
                       alt={project.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      loading={index < 2 ? "eager" : "lazy"}
+                      quality={85}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent" />
                   </div>
@@ -206,7 +209,10 @@ export function ProjectsSection() {
                       src={project.image}
                       alt={project.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      loading={index < 2 ? "eager" : "lazy"}
+                      quality={85}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent" />
                   </div>
