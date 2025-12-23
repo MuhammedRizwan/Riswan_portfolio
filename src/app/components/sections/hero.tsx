@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowDown, Download, Mail } from 'lucide-react'
+import { Download, Mail } from 'lucide-react'
 import { SplineScene } from '@/components/ui/splite'
 import { Spotlight } from '@/components/ui/spotlight-aceternity'
 import { SpotlightIbelick } from '@/components/ui/spotlight-ibelick'
@@ -63,8 +63,8 @@ export function HeroSection() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="flex flex-wrap gap-4"
             >
-              <Link
-                href="#contact"
+              <button
+                onClick={() => window.location.href = 'mailto:mhdrizwanpkd@gmail.com'}
                 className="group relative px-8 py-4 bg-white text-black rounded-full font-semibold overflow-hidden hover-lift"
               >
                 <span className="relative z-10 flex items-center gap-2">
@@ -72,7 +72,7 @@ export function HeroSection() {
                   <Mail className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </Link>
+              </button>
 
               <Link
                 href="/resume/Muhammed_Riswan.pdf"
@@ -106,23 +106,7 @@ export function HeroSection() {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-float" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-float-delayed" />
-      </div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 text-neutral-500 z-20"
-      >
-        <span className="text-sm">Scroll</span>
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
-          <ArrowDown className="w-5 h-5" />
-        </motion.div>
-      </motion.div>
+      </div>   
     </section>
   )
 }

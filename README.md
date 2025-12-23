@@ -36,8 +36,8 @@ A premium, animated 3D portfolio built with Next.js, featuring Spline 3D animati
    ```
 
 3. **Run the development server**
-   ```bash
-   npm run dev
+```bash
+npm run dev
    ```
 
 4. **Open your browser**
@@ -99,7 +99,6 @@ portfolio/
 5. **Contact Section** (`src/app/components/sections/contact.tsx`)
    - Update contact information
    - Modify social media links
-   - Connect form to your email service (e.g., Formspree, Resend)
 
 ### Spline 3D Scenes
 

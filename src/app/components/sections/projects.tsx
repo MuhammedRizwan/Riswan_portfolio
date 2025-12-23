@@ -23,7 +23,7 @@ const majorProjects: Project[] = [
     title: 'Heaven Finder',
     description: 'Travel package system with admin automation, user/agent flow, real-time chat using Socket.IO, reviews, and Razorpay payments. Built with clean architecture and scalable API layers. Full-stack with separate client and server repositories.',
     techStack: ['Next.js', 'Redux', 'MongoDB', 'TypeScript', 'Tailwind', 'Socket.IO', 'AWS'],
-    liveLink: 'https://heaven-finder.riswan.site/',
+    liveLink: 'https://heaven-finder.riswan.space/',
     githubLink: 'https://github.com/MuhammedRizwan/project-client',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop'
   },
@@ -31,7 +31,7 @@ const majorProjects: Project[] = [
     title: 'NextTick',
     description: 'E-Commerce platform for watches with admin dashboard for products, orders, and coupons. Features OTP login, JWT authentication, Razorpay integration. Deployed with Nginx + AWS EC2.',
     techStack: ['Node.js', 'Express.js', 'MongoDB', 'EJS', 'AWS', 'Nginx'],
-    liveLink: 'https://nexttick.riswan.site/',
+    liveLink: 'https://next-tick.riswan.space/',
     githubLink: 'https://github.com/MuhammedRizwan/NextTick',
     image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&h=600&fit=crop'
   },
@@ -43,6 +43,7 @@ const miniProjects: Project[] = [
     title: 'Quiz Application',
     description: 'Interactive quiz platform built with Next.js Server-Side Rendering for optimal performance and SEO.',
     techStack: ['Next.js', 'SSR', 'React'],
+    liveLink: 'https://quiz.riswan.space/',
     githubLink: 'https://github.com/MuhammedRizwan/Quiz-app-next-js',
     image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop'
   },
